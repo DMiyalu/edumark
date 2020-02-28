@@ -15,19 +15,19 @@ app.set('view engine', 'ejs');
 
 // gestion des routes
 app.get('/', function(request, response) {
-    response.render('accueil')
-});
-app.get('/courses', function(request, response) {
-        response.render('courses')
+        response.render('accueil')
     })
-    .get('/coursesDetails', function(request, response) {
-        response.render('courses_details')
+    .get('/projets', function(request, response) {
+        response.render('projets')
+    })
+    .get('/projets_details', function(request, response) {
+        response.render('projets_details')
+    })
+    .get('/apropos', function(request, response) {
+        response.render('apropos')
     })
     .get('/contact', function(request, response) {
         response.render('contact')
-    })
-    .get('/about', function() {
-        response.render('about')
     });
 //gestion des erreurs 404
 
