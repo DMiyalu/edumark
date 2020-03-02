@@ -23,8 +23,11 @@ app.get('/', function(request, response) {
     .get('/projets_details', function(request, response) {
         response.render('projets_details')
     })
-    .get('/apropos', function(request, response) {
-        response.render('apropos')
+    .get('/investir', function(request, response) {
+        response.render('commentInvestir')
+    })
+    .get('/leverDesFonds', function(request, response) {
+        response.render('leverDesFonds')
     })
     .get('/contact', function(request, response) {
         response.render('contact')
